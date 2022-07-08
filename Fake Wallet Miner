@@ -1,0 +1,52 @@
+from colorama import Fore
+import time
+import secrets
+from random import randint
+
+##Fake Wallet Miner
+
+continuing = True
+
+btcval = 31643.79
+print(Fore.RED + "Original: @shrekkkkkkkk on REPLIT")
+time.sleep(1)
+print(Fore.LIGHTGREEN_EX + "Remake by Mqze")
+time.sleep(1)
+print(Fore.CYAN + "█▀▀ █▀█ █▄█ █▀█ ▀█▀ █▀█")
+print("█▄▄ █▀▄ ░█░ █▀▀ ░█░ █▄█")
+print(Fore.RED + "██████╗░██████╗░██╗░░░██╗████████╗███████╗███████╗░█████╗░██████╗░░█████╗░███████╗██████╗")
+print("██╔══██╗██╔══██╗██║░░░██║╚══██╔══╝██╔════╝██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔════╝██╔══██╗")
+print("██████╦╝██████╔╝██║░░░██║░░░██║░░░█████╗░░█████╗░░██║░░██║██████╔╝██║░░╚═╝█████╗░░██████╔╝")
+print("██╔══██╗██╔══██╗██║░░░██║░░░██║░░░██╔══╝░░██╔══╝░░██║░░██║██╔══██╗██║░░██╗██╔══╝░░██╔══██╗")
+print("██████╦╝██║░░██║╚██████╔╝░░░██║░░░███████╗██║░░░░░╚█████╔╝██║░░██║╚█████╔╝███████╗██║░░██║")
+print("╚═════╝░╚═╝░░╚═╝░╚═════╝░░░░╚═╝░░░╚══════╝╚═╝░░░░░░╚════╝░╚═╝░░╚═╝░╚════╝░╚══════╝╚═╝░░╚═╝")
+print(Fore.GREEN + "Build:", Fore.RED + "20v30.14")
+time.sleep(0.2)
+print("System Key:", Fore.RED + secrets.token_hex(4))
+time.sleep(0.2)
+print(Fore.YELLOW + "Current BTC Value:", Fore.GREEN + f'${btcval}')
+time.sleep(1)
+print("Loading Wallet Gen...")
+time.sleep(3)
+print("Setting Up...")
+time.sleep(4)
+print("You are good to go, Type y to start Generating.")
+answer = input()
+Fore.RESET
+if answer.lower() == "y":
+
+  continuing = True
+else:
+  continuing = False
+while True:
+  if continuing == True:
+    time.sleep(.01)
+    ranInt = randint(0, 2500)
+    if ranInt <= 1:
+      randomBTC = randint(1,100)/100
+      print(Fore.WHITE + "> 0x" + secrets.token_hex(20) + Fore.GREEN + " > " + str(randomBTC) + " BTC ($" + str("{:,}".format(round(btcval*randomBTC,2))) + ")")
+
+    else:
+      print(Fore.WHITE + "[0x" + secrets.token_hex(20) + Fore.RED + " > 0.00 BTC ($0.00)]")
+  else:
+    break
